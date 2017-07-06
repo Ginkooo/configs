@@ -10,16 +10,10 @@ super + ctrl + g
 	puush -a &
 
 super + ctrl + alt + l
-	bspc node -d II
+	bspc node -m ^2
 
 super + ctrl + alt + h
-	bspc node -d I
-
-super + ctrl + alt + j
-	bspc desktop -s I
-
-super + ctrl + alt + k
-	bspc desktop -s II
+	bspc node -m ^1
 
 # program launcher
 super + @space
@@ -169,7 +163,7 @@ alt + shift + o
 
 #Run programs
 super + ctrl + c
-	chromium
+	firefox
 
 super + ctrl + m
 mpd

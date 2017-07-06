@@ -3,6 +3,7 @@
 sxhkd &
 bspc monitor -d I II
 termite &
-/home/ginko/notification_srv/server.py &
-/home/ginko/soft/bar/mybar.py | lemonbar -p -f "Anonymous pro minus:size=10" &
+
+mybar.py | lemonbar -p -f "Anonymous Pro Minus:size=10" &
+
 exec bspwm
