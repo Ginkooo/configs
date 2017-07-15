@@ -15,6 +15,9 @@ super + ctrl + alt + l
 super + ctrl + alt + k
 	bspc desktop -s next
 
+super + ctrl + l
+	lock
+
 # program launcher
 super + @space
 	dmenu_run
