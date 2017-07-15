@@ -10,10 +10,10 @@ super + ctrl + g
 	puush -a &
 
 super + ctrl + alt + l
-	bspc node -m ^2
+	bspc node -d next
 
-super + ctrl + alt + h
-	bspc node -m ^1
+super + ctrl + alt + k
+	bspc desktop -s next
 
 # program launcher
 super + @space
