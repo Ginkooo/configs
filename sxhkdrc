@@ -169,7 +169,7 @@ super + ctrl + c
 	firefox
 
 super + ctrl + m
-mpd
+	mpd
 
 #Shutdown
 super + ctrl + s
