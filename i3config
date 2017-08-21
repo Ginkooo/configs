@@ -147,5 +147,7 @@ bar {
 focus_follows_mouse no
 bindsym $mod+Shift+d exec pulseaudio-ctl down
 bindsym $mod+Shift+u exec pulseaudio-ctl up
-bindsym $mod+Control+l exec lock
+bindsym $mod+Control+l exec xtrlock
 bindsym $mod+Control+s exec getalife
+bindsym $mod+Control+c exec sc
+bindsym $mod+Control+f exec firefox
