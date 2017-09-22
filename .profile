@@ -8,6 +8,8 @@
 [[ -f ~/.extend.profile ]] && . ~/.extend.profile
 
 SHELL=zsh
+TERMINAL=termite
+EDITOR=nvim
 export SHELL
 
 export PASSPIE_DATABASE=https://github.com/ginkooo/nothinghere.git
