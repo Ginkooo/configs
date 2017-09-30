@@ -32,6 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# lockscreen
+bindsym $mod+Control+l exec lock
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -147,7 +150,6 @@ bar {
 focus_follows_mouse no
 bindsym $mod+Shift+d exec pulseaudio-ctl down
 bindsym $mod+Shift+u exec pulseaudio-ctl up
-bindsym $mod+Control+l exec xtrlock
 bindsym $mod+Control+s exec getalife
 bindsym $mod+Control+c exec sc
 bindsym $mod+Control+f exec firefox
