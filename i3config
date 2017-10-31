@@ -153,3 +153,6 @@ bindsym $mod+Shift+u exec pulseaudio-ctl up
 bindsym $mod+Control+s exec getalife
 bindsym $mod+Control+c exec sc
 bindsym $mod+Control+f exec firefox
+bindsym $mod+Shift+p exec playerctl play-pause
+bindsym $mod+Shift+period exec playerctl next
+bindsym $mod+Shift+comma exec playerctl previous
