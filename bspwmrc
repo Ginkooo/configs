@@ -1,9 +1,0 @@
-#! /bin/sh
-
-sxhkd &
-bspc monitor -d I II
-termite &
-
-mybar.py | lemonbar -p -f "Anonymous Pro Minus:size=10" &
-
-exec bspwm
