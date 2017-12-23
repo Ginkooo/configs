@@ -1,4 +1,5 @@
 [colors]
+font = Hack 9
 background = "#000000"
 cursor = "#dc322f"
 foreground = "#ffffff"
