@@ -152,7 +152,7 @@ bindsym $mod+Shift+bracketleft exec xbacklight -dec 10
 bindsym $mod+Shift+bracketright exec xbacklight -inc 10
 bindsym $mod+Shift+d exec pulseaudio-ctl down
 bindsym $mod+Shift+u exec pulseaudio-ctl up
-bindsym $mod+Control+s exec getalife
+bindsym $mod+Control+s exec shutdown now
 bindsym $mod+Control+c exec sc
 bindsym $mod+Control+f exec firefox
 bindsym $mod+Shift+p exec playerctl play-pause
