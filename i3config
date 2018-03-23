@@ -159,3 +159,9 @@ bindsym $mod+Control+f exec firefox
 bindsym $mod+Shift+p exec playerctl play-pause
 bindsym $mod+Shift+period exec playerctl next
 bindsym $mod+Shift+comma exec playerctl previous
+
+bindsym $mod+Control+h exec speak.py "I'm hungry"
+bindsym $mod+Control+y exec speak.py "Ok bruh"
+bindsym $mod+Control+n exec speak.py "No. Go fuck yourself."
+bindsym $mod+Control+t exec speak.py "I'm thirsty"
+bindsym $mod+Control+w exec speak.py "Welcome to my cave"
