@@ -148,8 +148,8 @@ bar {
 
 
 focus_follows_mouse no
-bindsym $mod+Shift+bracketleft exec xbacklight -dec 1
-bindsym $mod+Shift+bracketright exec xbacklight -inc 1
+bindsym $mod+Shift+bracketleft exec xbacklight -dec 5
+bindsym $mod+Shift+bracketright exec xbacklight -inc 5
 bindsym $mod+Shift+d exec pulseaudio-ctl down
 bindsym $mod+Shift+u exec pulseaudio-ctl up
 bindsym $mod+Shift+m exec pulseaudio-ctl mute
