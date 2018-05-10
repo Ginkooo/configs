@@ -156,6 +156,7 @@ bindsym $mod+Shift+m exec pulseaudio-ctl mute
 bindsym $mod+Control+s exec shutdown now
 bindsym $mod+Control+c exec sc
 bindsym $mod+Control+f exec firefox
+bindsym $mod+Control+g exec qutebrowser
 bindsym $mod+Shift+p exec playerctl play-pause
 bindsym $mod+Shift+period exec playerctl next
 bindsym $mod+Shift+comma exec playerctl previous
