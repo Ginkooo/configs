@@ -159,6 +159,8 @@ bindsym $mod+Control+f exec firefox
 bindsym $mod+Shift+p exec playerctl play-pause
 bindsym $mod+Shift+period exec playerctl next
 bindsym $mod+Shift+comma exec playerctl previous
+bindsym $mod+Control+Shift+l move workspace to output right
+bindsym $mod+Control+Shift+h move workspace to output left
 
 bindsym $mod+Control+y exec speak.py 'Ok bruh'
 bindsym $mod+Control+n exec speak.py 'No. Go fuck yourself'
