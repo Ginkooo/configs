@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # lockscreen
 bindsym $mod+Control+l exec lock
@@ -150,8 +150,8 @@ bar {
 focus_follows_mouse no
 bindsym $mod+Shift+bracketleft exec xbacklight -dec 5
 bindsym $mod+Shift+bracketright exec xbacklight -inc 5
-bindsym $mod+Shift+d exec pulseaudio-ctl down
-bindsym $mod+Shift+u exec pulseaudio-ctl up
+bindsym $mod+Shift+d exec pactl set-sink-volume 0 -5%
+bindsym $mod+Shift+u exec pactl set-sink-volume 0 +5%
 bindsym $mod+Shift+m exec pulseaudio-ctl mute
 bindsym $mod+Control+s exec shutdown now
 bindsym $mod+Control+c exec sc
