@@ -152,7 +152,7 @@ bindsym $mod+Shift+bracketleft exec xbacklight -dec 5
 bindsym $mod+Shift+bracketright exec xbacklight -inc 5
 bindsym $mod+Shift+d exec pactl set-sink-volume 0 -5%
 bindsym $mod+Shift+u exec pactl set-sink-volume 0 +5%
-bindsym $mod+Shift+m exec pulseaudio-ctl mute
+bindsym $mod+Shift+m exec pactl set-sink-mute 0 toggle
 bindsym $mod+Control+s exec shutdown now
 bindsym $mod+Control+c exec sc
 bindsym $mod+Control+f exec firefox
