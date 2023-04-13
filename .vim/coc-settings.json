@@ -28,5 +28,7 @@
     }
   },
   "python.formatting.provider": "black",
-  "coc.preferences.formatOnSaveFiletypes": ["python", "css", "markdown", "javascript", "rust"]
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "css", "markdown", "javascript", "rust", "css", "markdown", "typescript", "typescriptreact", "html"],
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"]
 }

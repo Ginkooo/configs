@@ -93,10 +93,15 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 source /usr/bin/virtualenvwrapper.sh
-export VIRTUALENV_PYTHON=/usr/bin/python3.7
+export VIRTUALENV_PYTHON=/usr/bin/python
 export EDITOR=vim
 
 alias cp='cp -i'
 alias mv='mv -i'
 
 PATH=$PATH:/home/ginkooo/.cargo/bin
+
+export OPENAI_API_KEY=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
+export PYTHONPATH=$PYTHONPATH:/home/ginkooo/dop-stage-map/backend/
+export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
+export FPATH=$HOME/tools/ripgrep/complete:$FPATH

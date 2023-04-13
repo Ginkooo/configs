@@ -17,6 +17,9 @@
 set nocompatible
 filetype plugin on
 
+packadd termdebug
+let g:termdebugger = 'rust-gdb'
+
 filetype plugin indent on
 
 set nobackup
@@ -322,7 +325,10 @@ nnoremap <silent> <leader>q :bdelete<CR>
 nnoremap <silent> <leader>d :call WriteDocstring()<CR>
 nnoremap <silent> <leader>v :vsplit<CR>
 nnoremap <silent> <leader>h :split<CR>
-nnoremap <silent> <leader>, :close<CR>
+tnoremap <silent> <leader>, :close<CR>
+tnoremap <silent> <leader>v :vsplit<CR>
+tnoremap <silent> <leader>h :split<CR>
+tnoremap <silent> <leader>, :close<CR>
 
 inoremap <M-h> <C-w>h
 inoremap <M-j> <C-w>j
@@ -332,6 +338,10 @@ nnoremap <M-h> <C-w>h
 nnoremap <M-j> <C-w>j
 nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
+tnoremap <M-h> <C-w>h
+tnoremap <M-j> <C-w>j
+tnoremap <M-k> <C-w>k
+tnoremap <M-l> <C-w>l
 
 nnoremap <M-f> :vertical resize +5<CR>
 nnoremap <M-a> :vertical resize -5<CR>
