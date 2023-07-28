@@ -112,18 +112,9 @@ Plug 'junegunn/fzf'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'skywind3000/vim-preview'
 Plug 'christoomey/vim-system-copy'
+Plug 'github/copilot.vim'
 
 call plug#end()
-
-
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
-
-set timeout ttimeoutlen=50
 
 
 "Gitgutter configuration----------------------------------------------------
@@ -322,9 +313,11 @@ nnoremap <silent> <leader>= <C-W>=
 nnoremap <silent> <leader>k :bnext<CR>
 nnoremap <silent> <leader>j :bprevious<CR>
 nnoremap <silent> <leader>q :bdelete<CR>
+nnoremap <silent> <leader>, :close<CR>
 nnoremap <silent> <leader>d :call WriteDocstring()<CR>
 nnoremap <silent> <leader>v :vsplit<CR>
 nnoremap <silent> <leader>h :split<CR>
+
 tnoremap <silent> <leader>, :close<CR>
 tnoremap <silent> <leader>v :vsplit<CR>
 tnoremap <silent> <leader>h :split<CR>

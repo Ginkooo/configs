@@ -105,3 +105,5 @@ export OPENAI_API_KEY=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
 export PYTHONPATH=$PYTHONPATH:/home/ginkooo/dop-stage-map/backend/
 export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
 export FPATH=$HOME/tools/ripgrep/complete:$FPATH
+
+export HUGGING_FACE_HUB_TOKEN=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
