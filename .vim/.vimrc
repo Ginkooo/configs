@@ -90,9 +90,7 @@ Plug 'heavenshell/vim-jsdoc'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
 Plug 'tobyS/pdv'
-Plug 'Valloric/MatchTagAlways'
 Plug 'antoyo/vim-licenses'
-Plug 'Valloric/MatchTagAlways'
 Plug 'mattn/emmet-vim'
 Plug 'farfanoide/vim-kivy'
 Plug 'tpope/vim-commentary'
@@ -313,15 +311,14 @@ nnoremap <silent> <leader>= <C-W>=
 nnoremap <silent> <leader>k :bnext<CR>
 nnoremap <silent> <leader>j :bprevious<CR>
 nnoremap <silent> <leader>q :bdelete<CR>
-nnoremap <silent> <leader>, :close<CR>
+nnoremap <silent> <leader>, <C-c>exit<CR><CR>
 nnoremap <silent> <leader>d :call WriteDocstring()<CR>
 nnoremap <silent> <leader>v :vsplit<CR>
 nnoremap <silent> <leader>h :split<CR>
 
-tnoremap <silent> <leader>, :close<CR>
+tnoremap <silent> <leader>, <C-c><C-c>exit<CR><CR>
 tnoremap <silent> <leader>v :vsplit<CR>
 tnoremap <silent> <leader>h :split<CR>
-tnoremap <silent> <leader>, :close<CR>
 
 inoremap <M-h> <C-w>h
 inoremap <M-j> <C-w>j
@@ -421,7 +418,6 @@ nnoremap <silent> <leader>gdm :Gdiff master<CR>
 
 "toggling things
 nnoremap <silent> <leader>tt :split<CR>:term<CR>
-nnoremap <silent> <leader>ta :ALEToggle<CR>
 
 "other
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
@@ -457,3 +453,9 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 vnoremap <silent> <leader> :xclip -i -sel c <CR><CR>
+
+let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-rust-analyzer', 'coc-prettier']
+nmap <leader>f  <Plug>(coc-fix-current)
+
+autocmd VimLeavePre * if get(g:, 'coc_process_pid', 0)
+    \	| call system('kill -9 '.g:coc_process_pid) | endif

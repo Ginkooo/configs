@@ -94,7 +94,7 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 source /usr/bin/virtualenvwrapper.sh
-export EDITOR=vim
+export EDITOR=nvim
 
 alias cp='cp -i'
 alias mv='mv -i'
@@ -107,3 +107,5 @@ export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
 export FPATH=$HOME/tools/ripgrep/complete:$FPATH
 
 export HUGGING_FACE_HUB_TOKEN=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
+
+alias vim="nvim"
