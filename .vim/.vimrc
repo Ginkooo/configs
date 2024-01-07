@@ -454,7 +454,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 vnoremap <silent> <leader> :xclip -i -sel c <CR><CR>
 
-let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-rust-analyzer', 'coc-prettier']
+let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-rust-analyzer', 'coc-prettier', 'coc-go']
 nmap <leader>f  <Plug>(coc-fix-current)
 
 autocmd VimLeavePre * if get(g:, 'coc_process_pid', 0)

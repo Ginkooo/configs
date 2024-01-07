@@ -9,7 +9,6 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
-antigen bundle virtualenvwrapper
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -91,9 +90,6 @@ ${git_info}
 %{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 fi
 
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/bin/virtualenvwrapper.sh
 export EDITOR=nvim
 
 alias cp='cp -i'
@@ -101,11 +97,13 @@ alias mv='mv -i'
 
 PATH=$PATH:/home/ginkooo/.cargo/bin
 
-export OPENAI_API_KEY=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
-export PYTHONPATH=$PYTHONPATH:/home/ginkooo/dop-stage-map/backend/
 export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
 export FPATH=$HOME/tools/ripgrep/complete:$FPATH
 
-export HUGGING_FACE_HUB_TOKEN=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
-
 alias vim="nvim"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+unsetopt autocd

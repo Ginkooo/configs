@@ -450,6 +450,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>ac  <Plug>(coc-codeaction-cursor)
+
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
